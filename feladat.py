@@ -4,6 +4,9 @@ import random
 lista_1 = []
 lista_2 = []
 
+def atlag():
+    atlag = (sum(lista_1) + sum(lista_2)) / 10
+    return atlag
 #1
 for i in range(5):
     lista_1.append(random.randint(1,5))
@@ -18,8 +21,11 @@ print(f"2. forduló: {lista_1[1]}:{lista_2[1]}")
 print(f"3. forduló: {lista_1[2]}:{lista_2[2]}")
 print(f"4. forduló: {lista_1[3]}:{lista_2[3]}")
 
-
 #2
+
+avg = atlag()
+print("\n2. feladat")
+print(f"A meccseken átlagosan {avg} gól született!")
 
 
 #3
