@@ -1,3 +1,4 @@
+from enum import Flag
 import random
 
 
@@ -27,6 +28,28 @@ avg = atlag()
 print("\n2. feladat")
 print(f"A meccseken átlagosan {avg} gól született!")
 
-
 #3
+print("\n3. feladat")
+hazai = 0
+dontetlen = False
+
+for i in range(len(lista_1)):
+    if lista_1[i] > lista_2[i]:
+        hazai += 1
+
+    if hazai > 2:
+        print("A hazai csapat győzött többször!")
+    else:
+        print("A vendég csapat győzött többször!")
+
+    if lista_1[i] == lista_2[i]:
+        dontetlen = True
+
 #4
+
+if dontetlen == True:
+    print("Döntetlen: igen")
+elif dontetlen == False:
+    print("Döntetlen: nem")
+
+
